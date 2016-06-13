@@ -1,16 +1,18 @@
 var gulp          = require('gulp');
 var templateCache = require('gulp-angular-templatecache');
 
-var elixir        = require('laravel-elixir');
+var Elixir = require('laravel-elixir');
 
-elixir.extend('ngTemplates', function(source, output, options) {
+var Task = Elixir.Task;
 
-  var config = this;
+Elixir.extend('ngTemplates', function(source, output, options) {
 
-  source = source || config.assetsDir + 'templates/**/*.html';
-  output = output || config.assetsDir + 'js';
+  var config = Elixir.config;
 
-  new elixir.Task('ng-templates', function() {
+  source = source || config.assetsPath + '/templates/**/*.html';
+  output = output || config.assetsPath + '/js';
+
+  new Task('ng-templates', function() {
     gulp.src(source)
         .pipe(templateCache(options))
         .pipe(gulp.dest(output));
