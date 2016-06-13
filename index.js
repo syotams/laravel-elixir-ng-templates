@@ -10,14 +10,11 @@ elixir.extend('ngTemplates', function(source, output, options) {
   source = source || config.assetsDir + 'templates/**/*.html';
   output = output || config.assetsDir + 'js';
 
-  gulp.task('ng-templates', function() {
+  new elixir.Task('ng-templates', function() {
     gulp.src(source)
-      .pipe(templateCache(options))
-      .pipe(gulp.dest(output));
-  });
-
-  this.registerWatcher('ng-templates', source);
-
-  return this.queueTask('ng-templates');
+        .pipe(templateCache(options))
+        .pipe(gulp.dest(output));
+  })
+  .watch(source);
 
 });
