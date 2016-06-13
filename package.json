@@ -1,6 +1,6 @@
 {
-  "name": "laravel-elixir-ng-templates",
-  "version": "0.1.3",
+  "name": "laravel-elixir-ng-templates-2",
+  "version": "0.2.0",
   "description": "Laravel Elixir AngularJS Templates",
   "main": "index.js",
   "scripts": {
@@ -15,19 +15,20 @@
     "gulp"
   ],
   "author": {
-    "name": "Andrei Canta"
+    "name": "Yotam Sar Shalom"
   },
   "license": "MIT",
   "dependencies": {
+    "gulp": "^3.8.8",
     "gulp-angular-templatecache": "^1.6.0",
-    "laravel-elixir": "^2.0.0"
+    "laravel-elixir": "^3.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hexbridge/laravel-elixir-ng-templates"
+    "url": "https://github.com/syotams/laravel-elixir-ng-templates.git"
   },
   "bugs": {
-    "url": "https://github.com/hexbridge/laravel-elixir-ng-templates/issues"
+    "url": "https://github.com/syotams/laravel-elixir-ng-templates/issues"
   },
-  "homepage": "https://github.com/hexbridge/laravel-elixir-ng-templates"
+  "homepage": "https://github.com/syotams/laravel-elixir-ng-templates"
 }

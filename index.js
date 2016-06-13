@@ -9,8 +9,8 @@ Elixir.extend('ngTemplates', function(source, output, options) {
 
   var config = Elixir.config;
 
-  source = source || config.assetsPath + '/templates/**/*.html';
-  output = output || config.assetsPath + '/js';
+  source = source || config.assetsPath + '/js/templates/**/*.html';
+  output = output || config.assetsPath + '/js/templates';
 
   new Task('ng-templates', function() {
     gulp.src(source)

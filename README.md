@@ -28,12 +28,12 @@ elixir(function(mix) {
 ##### `source`:
 
 - a globbing path that is passed to `gulp.src()`
-- defaults to `resources/assets/templates/**/*.html`
+- defaults to `resources/assets/js/templates/**/*.html`
 
 ##### `output`:
 
 - output directory for the compiled file
-- defaults to `resources/assets/js/templates.js`
+- defaults to `resources/assets/js/templates/templates.js`
 
 ##### `options`:
 
